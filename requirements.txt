@@ -1,5 +1,5 @@
 beautifulsoup4
-chronos
+chronos-forecasting
 matplotlib
 mistralai
 networkx
