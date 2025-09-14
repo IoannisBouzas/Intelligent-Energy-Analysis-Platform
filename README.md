@@ -6,11 +6,13 @@ A comprehensive AI-powered platform for energy data analysis, market insights, a
 
 This project is part of my summer Intership (2025) at CERTH,Greece where i had the chance to built an intelligent assistant that combines multiple specialized tools to provide comprehensive energy analysis capabilities. Built with a modular architecture, it offers data analysis, time-series forecasting, live price monitoring, news analysis, and bill processing in one integrated platform.
 
+## Landing Page
+
+https://agentic-energy-platform.lovable.app/
+
 ## Try it online here 
 
 https://energy-analysis-platform.streamlit.app/
-
----
 
 ## <img width="32" height="32" alt="image" src="https://github.com/user-attachments/assets/e49f0b01-8d7c-44f1-9963-2bea07fbd4b3" /> Important Notice
 - Because we use the free tier apis that Mistral provides we have a daily limit, use the app wisely
