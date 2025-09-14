@@ -1,4 +1,4 @@
-from chronos import ChronosBoltPipeline
+from chronos import BaseChronosPipeline
 import torch
 import pandas as pd
 from matplotlib import pyplot as plt
@@ -6,7 +6,7 @@ from matplotlib import pyplot as plt
 
 class ChronosForecaster:
     def __init__(self, model_name="amazon/chronos-bolt-small"):
-        self.pipeline = ChronosBoltPipeline.from_pretrained(model_name,torch_dtype=torch.bfloat16)
+        self.pipeline = BaseChronosPipeline.from_pretrained(model_name,torch_dtype=torch.bfloat16)
         self.name = "forecast_tool"
         self.description = "Generate time-series forecasts using Chronos"
 
@@ -72,4 +72,5 @@ class ChronosForecaster:
             "high_quantile": high.tolist(),
             "forecast_index": list(forecast_index),
             "figure": fig
+
         }
