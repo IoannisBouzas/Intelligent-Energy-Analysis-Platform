@@ -18,7 +18,8 @@ https://energy-analysis-platform.streamlit.app/
 - Because we use the free tier apis that Mistral provides we have a daily limit, use the app wisely
 - Bigger models like Mistral-Medium that we use for news have even more smaller daily limit and it is slow
 so do not worry if the app's response is slow. News tool has a hard job so be patient !!
-- Also Tavily has a limit for web search which is currently at 1000 apis calls 
+- Also Tavily has a limit for web search which is currently at 1000 apis calls
+- Of course you will find bugs, it is a proof of concept and NOT a production ready tool
 
 
 ## Key Features
