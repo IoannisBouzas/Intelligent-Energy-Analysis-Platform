@@ -193,14 +193,6 @@ For issues, questions, or contributions:
 - **Documentation**: See `/docs` folder
 - **Community**: GitHub Discussions
 
-## Changelog
-
-### Version 1.0.0
-- Initial release with core functionality
-- Data analysis, forecasting, and price monitoring tools
-- Greek market specialization
-- Streamlit web interface
-
 ### Roadmap
 
 - [ ] Multi-language support
