@@ -4,7 +4,20 @@ A comprehensive AI-powered platform for energy data analysis, market insights, a
 
 ## Overview
 
-This project is part of my summer Intership(2025) at CERTH where i had the chance to built an intelligent assistant that combines multiple specialized tools to provide comprehensive energy analysis capabilities. Built with a modular architecture, it offers data analysis, time-series forecasting, live price monitoring, news analysis, and bill processing in one integrated platform.
+This project is part of my summer Intership (2025) at CERTH,Greece where i had the chance to built an intelligent assistant that combines multiple specialized tools to provide comprehensive energy analysis capabilities. Built with a modular architecture, it offers data analysis, time-series forecasting, live price monitoring, news analysis, and bill processing in one integrated platform.
+
+## Try it online here 
+
+https://energy-analysis-platform.streamlit.app/
+
+---
+
+## <img width="32" height="32" alt="image" src="https://github.com/user-attachments/assets/e49f0b01-8d7c-44f1-9963-2bea07fbd4b3" /> Important Notice
+- Because we use the free tier apis that Mistral provides we have a daily limit, use the app wisely
+- Bigger models like Mistral-Medium that we use for news have even more smaller daily limit and it is slow
+so do not worry if the app's response is slow. News tool has a hard job so be patient !!
+- Also Tavily has a limit for web search which is currently at 1000 apis calls 
+
 
 ## Key Features
 
@@ -29,6 +42,11 @@ This project is part of my summer Intership(2025) at CERTH where i had the chanc
 
 ## Architecture
 
+### System Workflow
+
+[![](https://mermaid.ink/img/pako:eNqNVV1v2jAU_SuWp73RigQS0jxMClAoXWlpoe1W0wc3uYDVEEe26cqq_vfdOOFrnbQGyeT6HJ_r-2HnjcYyARrSueL5gkza04zgE7FbDYoMsnxlHsnR0TfSZmOjgC9TYcjt4LGktS3UYUMuMhLNITPkSsUL0EZxI1XFKseO5Xbfrleg1iTKeLrWQr-XYNeCp2wiZUrGkEJshMwO1p9aSo91ueHb5aRY8LhP6LOeVBBzbT5iZ-xCvAAZKRHDR3TALuHXPxTPWVuk6T9dlmPP0r6zoSjiTkkHM2rfHvfxC1bMkz5kgMnZRXdh0SGmF2e1ETHf-aooQ0u5xDSbPJUmFU9khP_6YBd9S7pinYWSmdSkLVNDhuhys40rSxixiVgC5lgJ0JgKSMR-rkeWdL1L4p3QK56K3_xDQc4s9YbdwxMZx9g-IptXhBsLjdmzSOVL0Qn8eL7phrHFJqysQkcuc66E3mpPLHyLsapnMNiBWswXf4U6sJw7NuEvIsVeGm368c4C96yvAJ6JLedYrlQMm_X3lvADS5GZoltPX7FO-_H_sISfZSv8VYZyPLeMh221rzo3Ff5gkShio24PMyvRrd7lJIpKuF22k23jD-7L8bJkdtgN6FxmGjANBuYHbXNdcUrr9sD6eWBF7QOzmiyPY9RlPYFRko2nzWbLA9neP-bRaXkpdIXOU77e7vjrV4JXg8zmiMWYV1W0zQsojZudZtqsUywzmWHQ4Zd63Xfq9RpmTj5DYTaTrXn0SyRmEbr5ay2WqVThl5l9Nhq9SsNNit-eRvF8UqNfaTRjPvN2-3ChlTTcT2qcVRqz2UmwFwvM_PjT-xhUGnDigN_YavDEaXqtT2qcVxrBU9xo8q2G5wVP7uy_GrSGV75IaGjUCmp0CWrJC5O-FXWdUrOAJUxpiK8JHsUpnWbvuCbn2YOUy80yJVfzBQ1nPNVorfKEG-gKjq263M4qyBJQHbnKDA2dIGhYFRq-0Vcatrzjhh8064Hjt1zH8Zs1uqbhkecdN_0WNkvQ8lz_JHDea_S39escO_WTlu8FblB3Gy0H00XxDsM7Zlh-yOz37P0Pjbwb_A?type=png)](https://mermaid.live/edit#pako:eNqNVV1v2jAU_SuWp73RigQS0jxMClAoXWlpoe1W0wc3uYDVEEe26cqq_vfdOOFrnbQGyeT6HJ_r-2HnjcYyARrSueL5gkza04zgE7FbDYoMsnxlHsnR0TfSZmOjgC9TYcjt4LGktS3UYUMuMhLNITPkSsUL0EZxI1XFKseO5Xbfrleg1iTKeLrWQr-XYNeCp2wiZUrGkEJshMwO1p9aSo91ueHb5aRY8LhP6LOeVBBzbT5iZ-xCvAAZKRHDR3TALuHXPxTPWVuk6T9dlmPP0r6zoSjiTkkHM2rfHvfxC1bMkz5kgMnZRXdh0SGmF2e1ETHf-aooQ0u5xDSbPJUmFU9khP_6YBd9S7pinYWSmdSkLVNDhuhys40rSxixiVgC5lgJ0JgKSMR-rkeWdL1L4p3QK56K3_xDQc4s9YbdwxMZx9g-IptXhBsLjdmzSOVL0Qn8eL7phrHFJqysQkcuc66E3mpPLHyLsapnMNiBWswXf4U6sJw7NuEvIsVeGm368c4C96yvAJ6JLedYrlQMm_X3lvADS5GZoltPX7FO-_H_sISfZSv8VYZyPLeMh221rzo3Ff5gkShio24PMyvRrd7lJIpKuF22k23jD-7L8bJkdtgN6FxmGjANBuYHbXNdcUrr9sD6eWBF7QOzmiyPY9RlPYFRko2nzWbLA9neP-bRaXkpdIXOU77e7vjrV4JXg8zmiMWYV1W0zQsojZudZtqsUywzmWHQ4Zd63Xfq9RpmTj5DYTaTrXn0SyRmEbr5ay2WqVThl5l9Nhq9SsNNit-eRvF8UqNfaTRjPvN2-3ChlTTcT2qcVRqz2UmwFwvM_PjT-xhUGnDigN_YavDEaXqtT2qcVxrBU9xo8q2G5wVP7uy_GrSGV75IaGjUCmp0CWrJC5O-FXWdUrOAJUxpiK8JHsUpnWbvuCbn2YOUy80yJVfzBQ1nPNVorfKEG-gKjq263M4qyBJQHbnKDA2dIGhYFRq-0Vcatrzjhh8064Hjt1zH8Zs1uqbhkecdN_0WNkvQ8lz_JHDea_S39escO_WTlu8FblB3Gy0H00XxDsM7Zlh-yOz37P0Pjbwb_A)
+
+
 ### Core Components
 
 ```
@@ -43,15 +61,16 @@ Intelligent-Energy-Analysis-Platform/
     └── bill_analysis_tool.py    # OCR bill processing
 ```
 
-### AI Models & APIs Used
+### AI Models & APIs Used for Tools
 
-- **Mistral AI**: Primary LLM for orchestration and analysis
-- **Codestral**: Specialized code generation for data analysis
-- **Chronos Bolt**: Time-series forecasting
-- **Mistral OCR**: Bill document processing
-- **Tavily API**: News search and content extraction
+- **Main Agent**: Devstral-Medium-2507 which excels at using tools
+- **Data Analysis Tool**: Codestral-2501 for code generation at 0.7 temp
+- **Live Price Tool**: Ministral-8b-2410 for analysis
+- **Forecast Tool**: Chronos Bolt Small 
+- **Bill Analysis Tool**: Mistral OCR + Ministral-8b-2410 for analysis
+- **News Tool**: Tabliy API for news search + Mistral-Medium for comprehensive analysis
 
-## Installation
+## Installation for local use
 
 ### Prerequisites
 
@@ -79,9 +98,7 @@ MISTRAL_API_KEY=your_mistral_api_key_here
 TAVILY_API_KEY=your_tavily_api_key_here
 ```
 
-## Usage
-
-### Starting the Application
+### Starting the Application 
 
 ```bash
 streamlit run ui.py
@@ -89,7 +106,10 @@ streamlit run ui.py
 
 Navigate to `http://localhost:8501` to access the web interface.
 
-### Core Workflows
+
+
+
+## Core Workflows
 
 #### 1. Data Analysis
 - Upload CSV/Excel energy datasets
@@ -157,50 +177,23 @@ Navigate to `http://localhost:8501` to access the web interface.
 - **Analysis Engine**: LLM-powered market intelligence and recommendations
 - **Update Frequency**: Real-time data refresh capabilities
 
-## Configuration
+### News Tool
+
+- **Extracting News**: Based on the user's query the tool uses tavily to search at greek news providers to find the best suited articles
+- **Articles Summary**: We use a LLM with big context window in order to do the summary and provide the user with the best articles
 
 
-### Model Optimization
 
-- Use quantized models for production deployment
-- Implement batch processing for multiple forecasts
-- Cache frequently accessed price data
+## Future Vision
 
-## Contributing
+### This was my first time dealing with agents and agentic systems so many things can be improved like:
+- [ ] Better context history management
+- [ ] Better prompting for the LLMs
+- [ ] More tools 
+- [ ] Better communication between the tools
+- [ ] And many more
 
-### Development Setup
-
-1. Fork the repository
-2. Create feature branch: `git checkout -b feature/new-tool`
-3. Install development dependencies: `pip install -r requirements-dev.txt`
-4. Make changes and test thoroughly
-5. Submit pull request with detailed description
-
-### Adding New Tools
-
-1. Create tool class inheriting from base structure
-2. Implement `get_tool_schema()` method
-3. Add tool integration to `MainAgent`
-4. Update UI components as needed
-5. Add comprehensive tests
-
-
-## Support
-
-For issues, questions, or contributions:
-
-- **Issues**: GitHub Issues tracker
-- **Documentation**: See `/docs` folder
-- **Community**: GitHub Discussions
-
-### Roadmap
-
-- [ ] Multi-language support
-- [ ] Advanced forecasting models
-- [ ] Historical price analysis
-- [ ] Mobile-responsive interface
-- [ ] API endpoint development
-- [ ] Database integration for data persistence
+### The problem of agentic architectures in energy analysis is still open and every can contribute, feel free to provide better insights about this solution
 
 ---
 
