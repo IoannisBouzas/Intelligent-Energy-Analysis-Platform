@@ -83,7 +83,7 @@ Intelligent-Energy-Analysis-Platform/
 ### Clone repo
 ```bash
 git clone https://github.com/your-username/Intelligent-Energy-Analysis-Platform.git
-cd CircuitImageAi
+cd Intelligent-Energy-Analysis-Platform
 ```
 
 ### Dependencies
