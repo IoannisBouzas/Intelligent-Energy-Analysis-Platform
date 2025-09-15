@@ -1,10 +1,10 @@
 # Intelligent-Energy-Analysis-Platform
 
-A comprehensive AI-powered platform for energy data analysis, market insights, and forecasting with specialized focus on the Greek energy market.
+A comprehensive AI-powered platform for energy data analysis, market insights, forecasting capabilities and news intergration.
 
 ## Overview
 
-This project is part of my summer Intership (2025) at CERTH,Greece where i had the chance to built an intelligent assistant that combines multiple specialized tools to provide comprehensive energy analysis capabilities. Built with a modular architecture, it offers data analysis, time-series forecasting, live price monitoring, news analysis, and bill processing in one integrated platform.
+This project is part of my summer Internship (2025) at CERTH,Greece where i had the chance to built an intelligent assistant that combines multiple specialized tools to provide comprehensive energy analysis capabilities. Built with a modular architecture, it offers data analysis, time-series forecasting, live price monitoring, news analysis, and bill processing in one integrated platform.
 
 ## Landing Page
 
