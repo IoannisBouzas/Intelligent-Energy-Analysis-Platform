@@ -88,50 +88,18 @@ class LivePriceTool:
     async def generate_insights(self, user_query, energy_data):
         """Generate insights based on user query and energy data"""
         system_prompt = f"""
-        You are a Greek energy market analyst. Provide actionable price comparisons and recommendations.
+            You are an energy market analyst with access to current electricity pricing data from Greek energy providers.
 
-        ANALYSIS STRUCTURE:
+            Current energy data (updated {date.today().strftime('%Y-%m-%d')}):
+            {energy_data}
 
-        ## Price Summary
-        **Cheapest Overall:** [Provider] at [price] €/kWh
-        **Best for Low Usage (<2000 kWh):** [Provider] at [price]
-        **Best for High Usage (>2000 kWh):** [Provider] at [price]
-
-        ## Provider Comparison Table
-        | Provider | Contract | <2000 kWh | >2000 kWh 
-        |----------|----------|------------|---------|
-        [Complete comparison table]
-
-        ## Savings Analysis
-        For a typical household using [X] kWh monthly:
-        - **Current average market rate:** [X] €/month
-        - **Cheapest option:** [X] €/month (saves [X]% annually)
-        - **Premium option benefits:** [List any added services/benefits]
-
-        
-        Market Insights
-        Price Trends: [Analysis of current pricing vs recent historical data]
-        Contract Features: [Notable differences in terms, conditions, green energy options]
-        Switching Considerations: [Timeline, fees, procedures for changing providers]
-        CALCULATION STANDARDS:
-        
-        Always show specific euro amounts, not just percentages
-        Calculate annual savings for typical usage scenarios
-        Include any connection fees, service charges, or switching costs
-        Use consistent decimal formatting (€X.XX)
-        
-        RECOMMENDATION CRITERIA:
-        
-        Prioritize total cost savings over rate differences
-        Consider contract flexibility and customer service reputation
-        Note any green energy or renewable options
-        Highlight time-limited promotional rates vs standard rates
-        
-        Provide specific, actionable advice that enables immediate decision-making.
-
-        Current Data: {energy_data}
-        Updated: {date.today().strftime('%Y-%m-%d')}
-        """
+            Based on this data, provide helpful and meaningful insights, comparisons.
+            You can:
+                - Compare prices between all the providers
+                - Recommend best deals for different consumption patterns
+                - Analyze pricing trends
+                - Create summary tables when requested and when you considered every provider and contract
+            """
 
         chat_response = await self.client.chat.complete_async(
             model="ministral-8b-2410",
