@@ -14,12 +14,13 @@ https://agentic-energy-platform.lovable.app/
 
 https://energy-analysis-platform.streamlit.app/
 
-## <img width="32" height="32" alt="image" src="https://github.com/user-attachments/assets/e49f0b01-8d7c-44f1-9963-2bea07fbd4b3" /> Important Notice
-- Because we use the free tier apis that Mistral provides we have a daily limit, use the app wisely
-- Bigger models like Mistral-Medium that we use for news have even more smaller daily limit and it is slow
-so do not worry if the app's response is slow. News tool has a hard job so be patient !!
-- Also Tavily has a limit for web search which is currently at 1000 apis calls
-- Of course you will find bugs, it is a proof of concept and NOT a production ready tool
+> [!WARNING]
+>  - Because we use the free tier apis that Mistral provides we have a daily limit, use the app wisely
+>  - Bigger models like Mistral-Medium that we use for news have even more smaller daily limit and it is slow
+>    so do not worry if the app's response is slow. News tool has a hard job so be patient !!
+>  - Also Tavily has a limit for web search which is currently at 1000 apis calls
+>  - Of course you will find bugs, it is a proof of concept and NOT a production ready tool
+>  - Streamlit often shut downs the app when it has to been used for a day so you have to be patienced in order to "wake up" the application 
 
 
 ## Key Features
