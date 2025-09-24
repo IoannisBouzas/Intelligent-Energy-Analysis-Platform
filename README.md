@@ -72,7 +72,7 @@ Intelligent-Energy-Analysis-Platform/
 - **Live Price Tool**: Ministral-8b-2410 for analysis
 - **Forecast Tool**: Chronos Bolt Small 
 - **Bill Analysis Tool**: Mistral OCR + Ministral-8b-2410 for analysis
-- **News Tool**: Tabliy API for news search + Mistral-Medium for comprehensive analysis
+- **News Tool**: Tavily API for news search + Mistral-Medium for comprehensive analysis
 
 ## Installation for local use
 
